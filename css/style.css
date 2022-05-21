@@ -12,6 +12,12 @@ a:link {
   color: black;
 }
 
+a:hover {
+  font-size: 22px;
+  text-decoration: none;
+  color: grey;
+}
+
 a:visited {
   text-decoration: none;
   color: black;
