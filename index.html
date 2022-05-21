@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+
+
+
+    <title>Just Stream It</title>
+  </head>
+  <body>
+
+  <!-- Header -->
+    <div class="header">
+    <table style="width:100%" border="0">
+      <tr>
+          <td><div class = "logo">    JustStreamIt </div></td>
+          <td><div class ="menu">
+            <a href="#">Accueil</a> -   <a href="#">Catégories</a>
+
+            </div>
+        <td>####</td>
+      </tr>
+    </table>
+    </div>
+
+  <!-- Best Movie -->
+
+<table style="width:100%" border="0" height="100px";><tr><td style="width:40%"; class="text_best_movie">BEST MOVIE</td><td id="bestMovie" align='center'style="width:60%"; ></td></tr></table>
+
+
+<!-- Caroussel nº1 - Best Rates Movies -->
+    <div class="carousel" data-carousel>
+        <div class="carousel-buttons">
+          <button
+            class="carousel-button carousel-button_previous"
+            data-carousel-button-previous>
+            <span class="fas fa-chevron-circle-left"></span>
+          </button>
+          <button
+            class="carousel-button carousel-button_next"
+            data-carousel-button-next>
+            <span class="fas fa-chevron-circle-right"></span>
+          </button>
+        </div>
+        <div class="slides" data-carousel-slides-container>
+          <div class="slide">
+              <div class="titles_slides"><h2>Best rated movies - Part 1</h2></div>
+                          <table style="width:100%" border="0" height="100px";><tr id="bestRatesMovies_1"></tr></table>
+          </div>
+          <div class="slide">
+            <div class="titles_slides"><h2>Best rated movies - Part 2</h2></div>
+
+    <table style="width:100%" border="0" height="100px";><tr id="bestRatesMovies_2"></tr></table>
+
+          </div>
+        </div>
+      </div>
+
+<!-- Caroussel nº2 - Best Action Movies -->
+<div class="carousel" data-carousel>
+    <div class="carousel-buttons">
+      <button
+        class="carousel-button carousel-button_previous"
+        data-carousel-button-previous>
+        <span class="fas fa-chevron-circle-left"></span>
+      </button>
+      <button
+        class="carousel-button carousel-button_next"
+        data-carousel-button-next>
+        <span class="fas fa-chevron-circle-right"></span>
+      </button>
+    </div>
+    <div class="slides" data-carousel-slides-container>
+      <div class="slide">
+          <div class="titles_slides"><h2>Action - Part 1</h2></div>
+                      <table style="width:100%" border="0" height="100px";><tr id="category_1"></tr></table>
+      </div>
+      <div class="slide">
+        <div class="titles_slides"><h2>Action - Part 2</h2></div>
+
+<table style="width:100%" border="0" height="100px";><tr id="category_1_Part2"></tr></table>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Caroussel nº2 - Best Animation Movies -->
+  <div class="carousel" data-carousel>
+      <div class="carousel-buttons">
+        <button
+          class="carousel-button carousel-button_previous"
+          data-carousel-button-previous>
+          <span class="fas fa-chevron-circle-left"></span>
+        </button>
+        <button
+          class="carousel-button carousel-button_next"
+          data-carousel-button-next>
+          <span class="fas fa-chevron-circle-right"></span>
+        </button>
+      </div>
+      <div class="slides" data-carousel-slides-container>
+        <div class="slide">
+            <div class="titles_slides"><h2>Animation - Part 1</h2></div>
+                        <table style="width:100%" border="0" height="100px";><tr id="category_2"></tr></table>
+        </div>
+        <div class="slide">
+          <div class="titles_slides"><h2>Animation - Part 2</h2></div>
+
+  <table style="width:100%" border="0" height="100px";><tr id="category_2_Part2"></tr></table>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Caroussel nº3 - Best Adventure Movies -->
+    <div class="carousel" data-carousel>
+        <div class="carousel-buttons">
+          <button
+            class="carousel-button carousel-button_previous"
+            data-carousel-button-previous>
+            <span class="fas fa-chevron-circle-left"></span>
+          </button>
+          <button
+            class="carousel-button carousel-button_next"
+            data-carousel-button-next>
+            <span class="fas fa-chevron-circle-right"></span>
+          </button>
+        </div>
+        <div class="slides" data-carousel-slides-container>
+          <div class="slide">
+              <div class="titles_slides"><h2>Adventure - Part 1</h2></div>
+                          <table style="width:100%" border="0" height="100px";><tr id="category_3"></tr></table>
+          </div>
+          <div class="slide">
+            <div class="titles_slides"><h2>Adventure - Part 2</h2></div>
+
+    <table style="width:100%" border="0" height="100px";><tr id="category_3_Part2"></tr></table>
+
+          </div>
+        </div>
+      </div>
+
+  <table><tr id="bestMovieContent"></tr></table>
+
+  <table><tr id="zoneBestRateMovies"></tr></table>
+  <table><tr id="zoneBestRateMovies_2"></tr></table>
+
+  <table><tr id="category1ContentPart_1"></tr></table>
+  <table><tr id="category1ContentPart_2"></tr></table>
+
+  <table><tr id="category2ContentPart_1"></tr></table>
+  <table><tr id="category2ContentPart_2"></tr></table>
+
+  <table><tr id="category3ContentPart_1"></tr></table>
+  <table><tr id="category3ContentPart_2"></tr></table>
+
+  <div id="overlay"></div>
+
+  <script src="js/carousel.js"></script>
+
+  <script src="js/BestRatedMovies_Part1.js"></script>
+  <script src="js/BestRatedMovies_Part2.js"></script>
+  <script src="js/BestRatedMoviesContent_Part1.js"></script>
+  <script src="js/BestRatedMoviesContent_Part2.js"></script>
+
+  <script src="js/Category1Content_Part1.js"></script>
+  <script src="js/Category1Content_Part2.js"></script>
+  <script src="js/Category1Images_Part1.js"></script>
+  <script src="js/Category1Images_Part2.js"></script>
+
+  <script src="js/Category2Content_Part1.js"></script>
+  <script src="js/Category2Content_Part2.js"></script>
+  <script src="js/Category2Images_Part1.js"></script>
+  <script src="js/Category2Images_Part2.js"></script>
+
+  <script src="js/Category3Content_Part1.js"></script>
+  <script src="js/Category3Content_Part2.js"></script>
+  <script src="js/Category3Images_Part1.js"></script>
+  <script src="js/Category3Images_Part2.js"></script>
+
+  <script src="js/BestMovie.js"></script>
+  <script src="js/BestMovieContent.js"></script>
+
+
+  </body>
+</html>
