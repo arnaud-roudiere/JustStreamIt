@@ -1,0 +1,213 @@
+/* ------- PARTIE DU HEADER -------*/
+.header {
+  background-color: grey;
+  height: 50px;
+  color: white;
+
+}
+
+a:link {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.logo {
+  font-size: 30px;
+  color : black;
+  font-family: Copperplate, sans-serif;
+  text-align: justify;
+  padding-left: 20px;
+}
+
+.menu {
+  font-size: 20px;
+  color : black;
+  font-family: Copperplate, sans-serif;
+
+}
+
+/* ------- PARTIE DU BEST MOVIE -------*/
+
+.text_best_movie {
+  text-align: justify;
+  font-size: 28px;
+  padding-right: 30px;
+  padding-top:   30px;
+  padding-left:  30px;
+  padding-bottom:  30px;
+  margin-left :  100px;
+  background-color: rgb(210, 210, 210);
+  border-radius: 10px;
+  width: 200px;
+  height: 100px;
+}
+
+
+/* ------- PARTIE DU TITRE -------*/
+
+.titles_slides {
+  background-color: rgb(220, 220, 220);
+  text-align:center;
+}
+
+
+
+/* ------- PARTIE DU CAROUSSEL -------*/
+.carousel {
+  --current-slide: 0;
+  /* we set position relative so absolute position works properly for the buttons */
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-button {
+  /* vertically centering the buttons */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+
+  /* basic styling */
+  padding: 0;
+  margin: 0.5rem;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+
+  font-size: 1.5rem;
+  cursor: pointer;
+
+  transition: color 0.1s;
+}
+
+.carousel-button:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-button_next {
+  /* The "next slide button" will be at the right */
+  right: 0;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s;
+  transform: translateX(calc(-100% * var(--current-slide)));
+}
+
+.slide {
+  flex: 0 0 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .carousel-button {
+    font-size: 2rem;
+    margin: 1rem;
+  }
+}
+
+
+
+
+/* ------- PARTIE DU MODAL  -------*/
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  background-size: cover;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  font-family: Tahoma, Arial, sans-serif;
+  color: #06D85F;
+  margin: 80px 0;
+}
+
+.box {
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 4px solid #3C98FF;
+  border-radius: 30px/70px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #3CC1FF;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
