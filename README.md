@@ -13,7 +13,7 @@ The webiste will connect a Movies API, extract the data and classify it as follo
 
 In order to install the API, you need to go to this [Github Page](https://github.com/OpenClassrooms-Student-Center/OCMovies-API-EN-FR) and follow the instructions.
 
-Once done, you can clone the repository by entering the following in your Terminal to clone the Github repository:
+Once done, you can clone the JustStreamIt webiste repository by entering the following in your Terminal to clone the Github repository:
 <code class="language-bash" data-lang="bash">git clone https://github.com/arnaud-roudiere/JustStreamIt.git</code><br><br>
 
 
@@ -21,5 +21,6 @@ Once done, you can clone the repository by entering the following in your Termin
 * Launch the API
 * Launch the index.html
 <br><br>
+
 ### Author:
 Arnaud ROUDIERE
